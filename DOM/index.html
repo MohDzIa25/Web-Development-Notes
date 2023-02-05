@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<!-- Three ways of linking js-
+inline,internal & external 
+
+
+
+    1)inline
+<body onload="alert('Hello');">
+   
+    <h1>Hello----:)-----!!</h1>
+</body> 
+Avoid this method
+
+2)internal
+<body>
+    
+    <h1>Hell o</h1>
+    <script type="text/javascript"> alert("Hallo ! Wie geht's");</script>
+   
+
+</body>
+
+3)external
+<body>
+    
+    <h1>Hell o</h1>
+    <script src="./index.js" charset="utf-8"></script>
+position of script matters its prefferd to be at bootom do that html , css loads first
+than js and make website visible.
+
+</body>
+
+Html element selector-
+getelemntsbyId()
+
+
+Html element selector-
+document.getElementsByTagName();
+document.getElementById();
+document.getElementsByClassName();
+most used-
+1)document.querySelector("nesting(use space in btwn)");
+2)document.querySelectorAll("returns an array of all elements with given selector");
+
+
+document.querySelector("h1").classList.add("add any class");/add/remove/toggle
+
+
+document.querySelector("--").innerHTML -> gives entire html content inside the selector.
+document.querySelector("--").textContent ->gives only text content
+
+
+document.querySelector("a").attributes;
+document.querySelector("a").getAttribute("href(or any css attribute)");
+document.querySelector("a").setAttribute("href","https://www.bing.com");
+
+
+
+//     document.querySelector(".set button").addEventListener("click",
+//     function(){
+//      alert((i+1)+" is clicked");
+//     });
+
+
+ar[i].addEventListener("click",
+    function(){    
+        var key=this.innerHTML;
+        sounds(key);   //user-defined function 
+    });
+
+
+    FOR KEYBOARD -
+    document.addEventListener("keypress",function (event) {
+    sounds(event.key);  //user-defined function 
+
+    For button pressed animation-
+    function selected(key)
+{
+    var element =document.querySelector("."+key);
+    element.classList.add("pressed");
+
+    setTimeout(function(){
+     element.classList.remove("pressed");
+    },120,element);
+
+
+}
+});
+-->
+
+
+
+
+
+
+</html>

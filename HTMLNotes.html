@@ -1,0 +1,91 @@
+<!Doctype html>
+<html>
+    
+    <head>   
+        <title> This is title the title of the web page</title>
+
+    </head>
+    <body>
+
+        <!-- write headings here -->
+      <h1>Heading level 1</h1>
+      <h2>Heading level 2</h2>
+      <h3>Heading level 3</h3>
+      <h4>Heading level 4</h4>
+      <h5>Heading level 5</h5>
+      <h6>Heading level 6</h6>
+
+      <!-- to add an extra line -->
+      <br>
+
+      <!-- to add horizontal line -->
+      <hr size="3px">
+
+      to add image
+      <img src="./images/goku.jpg" alt="message if image not visible">
+
+
+
+      <!-- Css general syntax
+     1) Selector{
+        property:value;
+      } 
+      To select via class name-
+      .classname{
+
+      } 
+      To select via ids- An id is unique but a class maynot be.
+      #idname{
+
+      }
+   2) Note we can also have multiple class initialised to same element,eg-
+    <img class="class1 class2">
+    use-
+    .class1{
+
+    }
+    .class2{
+
+    }
+   3) pseudo class in css-
+    eg: :hover
+    img:hover
+    {
+        //the property written in these will be active when hovered
+    }
+    
+    
+-->
+
+<!-- 4)We cannot change width of inline element that's why we inline-block element -->
+
+<!-- 5) TO align the element at center use-
+   Firstly,text-align : center in body(or parent element).This will work as long as we have full width element(block with full width). 
+   eg, if we change width say 10% of the element then it will remove from center alignment as it does not have full block width.
+   Note- text align center will align everything that does not have a width, if they have width use margin:auto.
+
+   Secondly,
+    for horizontal alignment use-
+   element{
+    margin:0 auto 0 auto;
+   }
+   for vertical alignment use-
+   element{
+    margin:auto 0 auto 0 ;
+   }
+
+6)Somtimes the font we use is not installed on user computer, so insted of using using multiple options of default font family we use
+  embedded font by copying font link in the head of webpage from (fonts.google.com).
+
+  7)To increse font size dont use px use rem(em & % are not used bcz the child %(em) gets multiplied by parent %(em) but rem is relative to root).
+   1em=16px=100%
+
+  8)line height: 2  , increases line space between two lines in text by two times.
+
+  9)float:left/right , to wrap the text around the image/element.Inorder to prevent some portion of text from
+   wrap around image use "clear:left/right".
+
+ 10) To remove underline from anchor tags use-0 text-decoration:none;
+ 11) To create button go to cssbutton generator wbsite -->
+    </body>
+</html>
